@@ -6,10 +6,10 @@ function MainNavigation() {
       <nav>
         <ul className={classes.list}>
           <li>
-            <a>Home</a>
+            <a href={"/"}>Home</a>
           </li>
           <li>
-            <a>Events</a>
+            <a href={"/events"}>Events</a>
           </li>
         </ul>
       </nav>
