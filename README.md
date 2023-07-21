@@ -1,3 +1,8 @@
+# events-react-router-app
+
+This is a project that uses React JS and React Router on the front end, and has a dummy backend API. The starter code and the complete project can be found in the "React - The Complete Guide 2023 (incl. React Router & Redux)" course on Udemy, from Academind. This bestselling course has turned more than 700,000 students into ReactJS developers (more than any other React course on Udemy)!
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
