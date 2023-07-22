@@ -34,26 +34,28 @@ const router = createBrowserRouter([
     path: "/",
     element: <RootLayout />,
     errorElement: <ErrorPage />,
-  },
-  {
-    path: "/events",
-    element: <EventsPage />,
-  },
-  {
-    path: "",
-    element: <Homepage />
-  },
-  {
-    path: "/events/:eventId",
-    element: <EventDetailPage />,
-  },
-  {
-    path: "/events/new",
-    element: <NewEventPage />,
-  },
-  {
-    path: "/events/:eventId/edit", 
-    element: <EditEventPage />,
+    children: [
+      {
+        path: "/events",
+        element: <EventsPage />,
+      },
+      {
+        path: "",
+        element: <Homepage />,
+      },
+      {
+        path: "/events/:eventId",
+        element: <EventDetailPage />,
+      },
+      {
+        path: "/events/new",
+        element: <NewEventPage />,
+      },
+      {
+        path: "/events/:eventId/edit",
+        element: <EditEventPage />,
+      },
+    ],
   },
 ]);
 
