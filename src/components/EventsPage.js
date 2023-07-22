@@ -1,5 +1,25 @@
+import { Link } from "react-router-dom";
+
+const EVENTS = [
+  { id: "e1", title: "Learn React." },
+  { id: "e2", title: "Watch 'Barbenheimer' double feature." },
+  { id: "e3", title: "Eat oatmeal." },
+  { id: "e4", title: "Walk the dogs." },
+];
+
 const EventsPage = () => {
-  return <h1>This is the Events page.</h1>;
+  return (
+  <div>
+  <h1> The Events Page</h1>
+  <ul>
+  {EVENTS.map((event) => (
+    <li key={event.id}>
+    <Link to={event.id}>{event.title}</Link>
+    </li>
+  ))}
+  </ul>
+  </div>
+  )
 };
 
 export default EventsPage;
