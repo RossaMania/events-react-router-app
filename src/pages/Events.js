@@ -1,5 +1,5 @@
 import { useLoaderData, json } from "react-router-dom";
-import EventsList from "../components/EventsList";
+import EventsList from "../components/EventsList.js";
 
 function EventsPage() {
   const data = useLoaderData();
