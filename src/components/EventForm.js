@@ -72,7 +72,7 @@ function EventForm({ method, event }) {
         />
       </p>
       <div className={classes.actions}>
-        <button type="button" onClick={cancelHandler}>
+        <button type="button" onClick={cancelHandler} disabled={isSubmitting}>
           Cancel
         </button>
         <button disabled={isSubmitting}>
@@ -106,6 +106,9 @@ export async function action({ request, params }) {
 
   const response = await fetch(url, {
     method: method,
+    headers: {
+      "Content-Type": "application/json",
+    },
     body: JSON.stringify(eventData),
   });
 
